@@ -5,8 +5,8 @@ HackPrinceton Fall 2013
 
 Create a SoundCloud playlist from your Tumblr dashboard.
 
-main.py requires you to fill in your developer details from developers.soundcloud.com and tumblr.com/developers.
+Build using express.js, Python, and several OAuth libraries.
 
-Oauth/node.js implementation in progress. You can visit and authenticate with the following two pages, but the playlist-generating script is not yet functional on Heroku.
-http://listentotumblr.herokuapp.com/auth/tumblr
-http://listentotumblr.herokuapp.com/auth/soundcloud
+http://listentotumblr.herokuapp.com
+
+main.py is a local script, not used by node.js, that requires you to fill in your developer details from developers.soundcloud.com and tumblr.com/developers.
