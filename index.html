@@ -1,13 +1,35 @@
-<!DOCTYPE html>
 <html>
-	<head>
-        <script src="https://connect.soundcloud.com/sdk.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="script.js"></script>
-	</head>
-	<body>
-        <a href="#" class="connect">Connect with SoundCloud</a>
-        <p>Hello, your name is <span id="username"></span></p>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<style> * {font-family: 'Open Sans', sans-serif;} form{display:inline;}</style>
+</head>
+<body>
 
-	</body>
+<div class="container">
+
+  <div class="buttons">
+    <h1>ListenToTumblr</h1>
+    	<p class="lead">Make a playlist from your Tumblr dashboard.</p>
+	<form action="auth/tumblr" method="get">
+    <input class="btn btn-primary" type="submit" value="Allow Tumblr" 
+        name="Tumblrt" id="tumblr_submit" />
+	</form>
+	<form action="auth/soundcloud" method="get">
+	<input class="btn btn-primary" type="submit" value="Allow SoundCloud" 
+	 	name="SoundCloud" id="soundcloud_submit" />
+	</form>
+	<form action="create" method="post">
+	<input class="btn btn-success" type="submit" value="Create!" 
+		name="Submit" id="create" />
+	</form>
+	<p>
+	<p>
+	<p style="color:darkgray">Playlists will be marked as private when they are created, so you can edit them before sharing.</p>
+        <p style="color:darkgray"><a href="http://nlts.co">Created by Matt Townsend</a></p
+  </div>
+</div>
+</body>
 </html>
